@@ -40,6 +40,7 @@ class MainActivity : ComponentActivity() {
                         CallCreditScreen()
                         CreditText()
                         Proceed()
+                        CallCreditInfo().Content()
                     }
                 }
             }
@@ -197,7 +198,7 @@ fun CreditText() {
             )
 
             Button(
-                onClick = { /* Handle button click here */ },
+                onClick = { CallCreditInfo() },
                 modifier = Modifier
                     .padding(16.dp)
                     .height(48.dp)
