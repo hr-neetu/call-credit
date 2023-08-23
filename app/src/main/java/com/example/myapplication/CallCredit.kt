@@ -177,25 +177,27 @@ fun CreditText() {
             .fillMaxWidth()
             .background(color = Color.LightGray, shape = RoundedCornerShape(20.dp))
     ) {
-        Column(
-            modifier = Modifier
-                .padding(16.dp)
-        ) {
-            Text(
-                text = "Credit Value",
-                fontSize = 14.sp,
-                color = Color.Black
-            )
-            Text(
-                text = "1 Call alert = 1 credits",
-                fontSize = 14.sp,
-                color = Color.Black
-            )
-            Text(
-                text = "Lifetime validity",
-                fontSize = 14.sp,
-                color = Color.Black
-            )
+        Row() {
+            Column(
+                modifier = Modifier
+                    .padding(16.dp)
+            ) {
+                Text(
+                    text = "Credit Value",
+                    fontSize = 14.sp,
+                    color = Color.Black
+                )
+                Text(
+                    text = "1 Call alert = 1 credits",
+                    fontSize = 14.sp,
+                    color = Color.Black
+                )
+                Text(
+                    text = "Lifetime validity",
+                    fontSize = 14.sp,
+                    color = Color.Black
+                )
+        }
 
             Button(
                 onClick = { CallCreditInfo() },
@@ -206,7 +208,7 @@ fun CreditText() {
                 shape = RoundedCornerShape(20.dp),
                 colors = ButtonDefaults.buttonColors(Color.Blue)
             ) {
-                Text(text = "More Info", fontSize = 16.sp, color = Color.White)
+                Text(text = "More Info", fontSize = 12.sp, color = Color.White)
 
             }
         }
