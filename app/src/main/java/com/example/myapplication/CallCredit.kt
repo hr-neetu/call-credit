@@ -224,7 +224,7 @@ fun Proceed() {
     )
     {
         Button(
-            onClick = { /* Handle button click here */ },
+            onClick = { },
             modifier = Modifier
                 .padding(20.dp)
                 .height(48.dp)
